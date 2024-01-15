@@ -1,11 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fi">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <link href="tyyli.css" rel="StyleSheet" type="text/css" />
+    <title>MyPortfolio</title>
 </head>
+
 <body>
-    <p>Hello World!</p>
+    <div class="navbartop">
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#porfolio">Work</a></li>
+                <li><a href="#others">Other activities</a></li>
+                <li><a href="#contactdiv">Contact me</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="start">
+        <p>Information and Software Engineer student</p>
+        <h1>Hi, I'm <span>Juuso</span><br>from Jyväskylä Finland</h1>
+        <p>In this site I will introduce my life and my works</p>
+    </div>
+
+    <!----------------About------------------->
+
+    <div id="about">
+        <div class="Ab_container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/Kuvat/MinaKuva.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As a second-year undergraduate student in Information and Software Engineering at Jyväskylä
+                        University, I am highly interested in the field and eager to learn more. My strengths include
+                        strong collaborative skills, problem-solving abilities, persistence, and attention to detail.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('interests')">Interests</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming</span><br>Small Aplications</li>
+                            <li><span>Coding languages</span><br>Java, C#, Python, HTML, CSS, Javascript </li>
+                            <li><span>Communication</span> <br>Customer and Team </li>
+                            <li><span>Problem Solving</span><br>Mathematical and computer-related problems at a basic
+                                level</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Service desk employee</span><br>Device and application support personnel for
+                                healthcare professionals. </li>
+                            <li><span>Special needs assistant</span><br>Guided middle school students and led an after-school program for elementary school children.</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021 - 2024</span><br>Bachelor of Information and Software Engineering</li>
+                            <li><span>2015 - 2018</span><br>Upper secondary school</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="interests">
+                        <ul>
+                            <li><span>Health Technology</span><br></li>
+                            <li><span>Embedded system </span><br></li>
+                            <li><span>FullStack</span><br></li>
+                            <li><span>UI/UX</span><br></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------Portfoli------------------->
+    <div id="porfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/Kuvat/Ht1.png" title="Opettavainen kalastuspeli" alt=" ">
+                    <div class="layer">
+                        <a href="https://gitlab.jyu.fi/juvavuor/ohj1ht">
+                            <h3>HT1 Fissing Game</h3>
+                        </a>
+                        <p>You can go fishing and study fish species at the same time</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/Kuvat/Ht2.png" title="Seuranjäsenlista" alt=" ">
+                    <div class="layer">
+                        <a href="https://gitlab.jyu.fi/juvavuor/ohj2">
+                            <h3>HT2 Player Register</h3>
+                        </a>
+                        <p>You can add players to teams and keep track about their payments </p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/Kuvat/OpiskeluajanSeuranta.png" title="Opiskeluajan seuranta" alt=" ">
+                    <div class="layer">
+                        <a href="https://github.com/juuvuor/Time_Calculator">
+                            <h3>Time Calculator</h3>
+                        </a>
+                        <p>With this application you can track the time you spend studying </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------OTHERS------------------->
+    <div id="others">
+        <div class="container">
+            <div class="Vol-col">
+                <h1 class="sub-title">Leisure pursuits and other interests</h1>
+                <p>I enjoy a wide variety of activities and consider myself an active person who is always eager to
+                    explore new interests. These photos capture some of my most memorable moments from the past year..
+                </p>
+
+                <div class="tab-titles-others">
+                    <p class="tab-links active-link" onclick="opentab('volunteer')">Volunteer</p>
+                    <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+                </div>
+
+
+                <div class="tab-contents active-tab" id="volunteer">
+
+                    <div class="voluntary">
+                        <h3>Volunteer</h3></a>
+                        <p>As the Corporate Relations Officer for the Algo ry, I have been actively engaged in my
+                            duties. During my time here, I have had the privilege of experiencing numerous unforgettable
+                            moments.</p>
+                        <p>I also worked as a tutor last fall in Jyväskylä University.</p>
+                        <div class="voluntary-list">
+                            <img src="/Kuvat/VujuTPJ.jpeg" title="" alt=" ">
+                            <img src="/Kuvat/AlgoLogo.png" title="" alt=" ">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-contents" id="hobbies">
+                    <div class="myHobbies">
+                        <h3>My hobbies</h3>
+                        <p>I am very active and enjoy trying new sports. Currently, my favorite activities include golf, snowboarding, fly fishing, working out at the gym, and playing floorball.</p>
+                        <div class="hobbie-list">
+
+                            <img src="/Kuvat/Golf.png" title="" alt=" ">
+                            <img src="/Kuvat/Kalastus.png" title="" alt=" ">
+
+                            <img src="/Kuvat/Laskettelu.png" title="" alt=" ">
+                            <img src="/Kuvat/Rive.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div id="contactdiv">
+        <h1 class="sub-title">Contact info</h1>
+        <div class="cenbutton">
+            <a href="www.linkedin.com/in/juuso-vuorela-703a26228"><img src="/Kuvat/In-Black.png" alt=""
+                    class="link"></a>
+            <a href="mailto:juuso.vuorela@gmail.com"><button class="button">Contact me</button></a>
+        </div>
+
+    </div>
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+
+    </script>
+
 </body>
+
 </html>
