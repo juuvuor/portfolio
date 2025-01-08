@@ -11589,7 +11589,9 @@ html {
 }
 .profile .profile-img {
   height: 80vw;
-  max-height: 45rem;
+  max-height: 125%;
+  min-height: 125%;
+  border-radius: 25px;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -11631,15 +11633,35 @@ html {
 .profile .dots-4 svg {
   fill: #1e30f3;
 }
-
-@media (min-width: 576px) {
+@media (min-width: 300px) {
   .profile {
     height: 60vw;
     width: 60vw;
   }
-  .profile .profile-img {
-    height: 125%;
-    border-radius: 25px;
+  .profile .profile-img{
+    border-radius: 7%;
+  }
+  .profile .dots-1 {
+    width: 3vw;
+    right: 1.5vw;
+  }
+  .profile .dots-2 {
+    width: 3vw;
+    right: -4vw;
+  }
+  .profile .dots-3 {
+    width: 3vw;
+    left: 1.5vw;
+  }
+  .profile .dots-4 {
+    width: 3vw;
+    left: -4vw;
+  }
+}
+@media (min-width: 576px) {
+  .profile {
+    height: 60vw;
+    width: 60vw;
   }
   .profile .dots-1 {
     width: 3vw;
@@ -11663,10 +11685,6 @@ html {
     height: 50vw;
     width: 50vw;
   }
-  .profile .profile-img {
-    height: 125%;
-    border-radius: 25px;
-  }
   .profile .dots-1 {
     width: 3vw;
     right: 1.5vw;
@@ -11688,10 +11706,6 @@ html {
   .profile {
     height: 40vw;
     width: 40vw;
-  }
-  .profile .profile-img {
-    height: 125%;
-    border-radius: 25px;
   }
   .profile .dots-1 {
     width: 1.5vw;
@@ -11715,10 +11729,6 @@ html {
     height: 35vw;
     width: 35vw;
   }
-  .profile .profile-img {
-    height: 125%;
-    border-radius: 25px;
-  }
   .profile .dots-1 {
     width: 1.5vw;
     right: 0.75vw;
@@ -11740,10 +11750,6 @@ html {
   .profile {
     height: 35vw;
     width: 35vw;
-  }
-  .profile .profile-img {
-    height: 125%;
-    border-radius: 25px;
   }
   .profile .dots-1 {
     width: 1.5vw;
