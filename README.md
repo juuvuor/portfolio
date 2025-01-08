@@ -1,4 +1,4 @@
-# Juuso Vuorela's Portfolio
+# My Portfolio
 
 Welcome to my portfolio website! This site showcases my projects, skills, and experience.
 
